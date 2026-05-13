@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- try to get it so that it's nice to view on any device -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The City of Deshangria</title>
+
+        <!-- import the styles the website will use, and the css stuff -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Deshangria_website_style.css">
+    </head>
+    <body>
+
+        <!-- ========================= BANNER =============================== -->
+        <header class="SiteBanner">
+            <div class="BannerInner">
+                <span class="BannerCrest">⚔️</span>
+                <div class="BannerText">
+                    <h1 class="BannerTitle">Deshangria</h1>
+                    <p class="BannerSub">Capital of the Kingdom of Solitude</p>
+                </div>
+                <span class="BannerCrest">🏔️</span>
+            </div>
+        </header>
+
+        <!-- ========================= NAVIGATION STUFF =============================== -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="Home Page.html" class="active">🏠 Home</a></li>
+                <li><a href="dayinthelife.html">☀️ Day in the Life</a></li>
+                <li><a href="history.html">📜 History</a></li>
+                <li><a href="blacksmith.html">⚒️ Blacksmith</a></li>
+                <li><a href="theater.html">🎭 Theater</a></li>
+                <li><a href="hunting.html">🐺 Hunting</a></li>
+                <li><a href="helpcenter.html">❓ Help Center</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================= MAIN CITY PICTURE =============================== -->
+        <section class="CityPicture">
+            <div class="CityOverlay"></div>
+            <img src="Images/Home page images/City_Picture.png" alt="The City of Deshangria" class="CityIMG">
+            <div class="CityCaption">
+                <p>The bustling city of Deshangria</p>
+            </div>
+        </section>
+
+        <!-- ========================= MAIN CITY PICTURE =============================== -->
+        <main>
+            <div class="ClassContainer reveal">
+                <h2>Welcome to Deshangria</h2>
+                <p>
+                    Why hello there fellow traveler! Here to see our great city of Deshangria are you? Or maybe you're here
+                    to stay 😱??? WELL LUCKY FOR YOU, WE'RE AWESOME🤪!! We, the Deshangria city council created a special
+                    guide to help you get aclimated to life around here much faster then you would at any other run down 
+                    city. So get excited enjoy the virtual tour of our wonderful city, Deshangria! 
+                </p>
+                <p>
+                    P.S. this website is only viewable for beings who are moving here or sponsered to travel here. With that being said, don't you feel special😁?
+                </p>
+
+                <!-- Video Tour -->
+                <h2>Virtual Tour of the City Market</h2>
+                <p>
+                    Come explore Deshangria's awesome market place without even having to go out side! do be warned though
+                    after watching this you definitly will want to go out side!
+                </p>
+                <div class="VideoWrapper">
+                    <video controls width="100%">
+                        <source src="Images\Home page images\video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.  <!-- Incase it does not load-->
+                    </video>
+                </div>
+            </div>
+
+            <!-- ========================= CONTENT PAGE CARDS =============================== -->
+            <!-- I always thought these looked cool in other websites so I wanted them and boy did they not disappoint-->
+            <div class="ClassContainer reveal">
+                <h2>Discover More About Deshangria</h2>
+                <p>Click any section below to learn more about Deshangria.</p>
+
+                <div class="CardGrid">
+                    <a href="dayinthelife.html" class="PageCard">
+                        <span class="CardIcon">☀️</span>
+                        <h3>Day in the Life</h3>
+                        <p>
+                            Scared about what life is like here? Don't be, come see how life is for some of the locals around 
+                            the city. Don't worry, this place is very welcoming of new comers!
+                        </p>
+                        <span class="CardLink">Explore Daily Life</span>
+                    </a>
+
+                    <a href="history.html" class="PageCard">
+                        <span class="CardIcon">📜</span>
+                        <h3>History</h3>
+                        <p>
+                            From the original 7 civilizations, to the Great Siege, to the current status of life diver deeper
+                            into the origins of this beautiful land.
+                        </p>
+                        <span class="CardLink">Learn the History</span>
+                    </a>
+
+                    <a href="blacksmith.html" class="PageCard">
+                        <span class="CardIcon">⚒️</span>
+                        <h3>Blacksmith</h3>
+                        <p>
+                            Known for our ground breaking technology, our forges are no different come check out our 
+                            renowned blacksmith shop for yourself
+                        </p>
+                        <span class="CardLink">Visit the Forge</span>
+                    </a>
+
+                    <a href="theater.html" class="PageCard">
+                        <span class="CardIcon">🎭</span>
+                        <h3>Theater</h3>
+                        <p>
+                            Catch the latest showings at Deshangria's beloved theater. Check the schedule and grab your seat.
+                            It's free by the way😁!
+                        </p>
+                        <span class="CardLink">See What's Playing</span>
+                    </a>
+
+                    <a href="hunting.html" class="PageCard">
+                        <span class="CardIcon">🐺</span>
+                        <h3>Hunting Grounds</h3>
+                        <p>
+                            Are you a hunter? Lucky for you Deshangria is home to some of the most formidible predators in the land. Check out the beasts you'll be up against!
+                        </p>
+                        <span class="CardLink">Learn to Hunt</span>
+                    </a>
+
+                    <a href="helpcenter.html" class="PageCard">
+                        <span class="CardIcon">❓</span>
+                        <h3>Help Center</h3>
+                        <p>
+                            Any questions? No problem! give our help center a message and we'll get back to you as soon as possible
+                        </p>
+                        <span class="CardLink">Get Help</span>
+                    </a>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- ========================= FOOTER =============================== -->
+        <!-- It will be the same across the board-->
+        <footer>
+            <p>🏔️ <strong>Deshangria</strong> — Capital of the Kingdom of Solitude</p>
+            <p>
+                <a href="helpcenter.html">Help Center</a> ·
+                <a href="">Contact Us</a> · <!-- Fake Contact Link -->
+                <!-- we need external links so I added this random one to some D&D like stuff :) -->
+                <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms_Wiki" target="_blank" rel="noopener">Kingdom Archives</a>
+            </p>
+            <p>© Year 1247 of the Third Age · All rights reserved by the Crown of Solitude</p>
+        </footer>
+
+        <script src="scroll-reveal.js"></script>
+    </body>
+</html>

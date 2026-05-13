@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- try to get it so that it's nice to view on any device -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The City of Deshangria</title>
+
+        <!-- import the styles the website will use, and the css stuff -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Deshangria_website_style.css">
+    </head>
+    <body>
+
+        <!-- ========================= BANNER =============================== -->
+        <header class="SiteBanner">
+            <div class="BannerInner">
+                <span class="BannerCrest">⚔️</span>
+                <div class="BannerText">
+                    <h1 class="BannerTitle">Deshangria</h1>
+                    <p class="BannerSub">Capital of the Kingdom of Solitude</p>
+                </div>
+                <span class="BannerCrest">🏔️</span>
+            </div>
+        </header>
+
+        <!-- ========================= NAVIGATION STUFF =============================== -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="Home Page.html" class="active">🏠 Home</a></li>
+                <li><a href="dayinthelife.html">☀️ Day in the Life</a></li>
+                <li><a href="history.html">📜 History</a></li>
+                <li><a href="blacksmith.html">⚒️ Blacksmith</a></li>
+                <li><a href="theater.html">🎭 Theater</a></li>
+                <li><a href="hunting.html">🐺 Hunting</a></li>
+                <li><a href="helpcenter.html">❓ Help Center</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================= MAIN CONTENT =============================== -->
+        <main>
+
+            <!-- Description -->
+            <div class="ClassContainer reveal">
+                <h2>The Hunting Grounds of Deshangria</h2>
+                <p>
+                    For those of you who are thrill seekers, fear not. War is not the only thing you need for the feeling. In the 
+                    surrounding mountains of our great city are tons of suuuuuper dangerous creatures. You will need a slip of permission before you hunt
+                    however once that is aquired you are free to do as you please. While also following the rules for it too.
+                </p>
+                <p>
+                    If you are interested in becoming a hunter speak to the help center and they'll get you started
+                    <a href="helpcenter.html">Help Center</a> to register or find a guide.
+                </p>
+                <p>
+                    maybe you're new to hunting though
+                    <a href="https://www.dndbeyond.com/sources/phb/equipment#Adventuring-Gear" target="_blank" rel="noopener">D&D Beyond Equipment Guide</a>
+                    is a useful reference for understanding hunting and adventuring gear. Make sure to look before you go, it helps to be prepared.
+                </p>
+            </div>
+
+            <!-- CREATURE LISTE -->
+            <div class="ClassContainer reveal">
+                <h2>Known Creatures of the Mountains</h2>
+                <p>The following creatures have been documented by Deshangrian scouts and hunters:</p>
+
+                <div class="TableWrapper">
+                    <table class="ShowingsTable">
+                        <thead>
+                            <tr>
+                                <th>Creature</th>
+                                <th>Danger Level</th>
+                                <th>Habitat</th>
+                                <th>Primary Yield</th>
+                                <th>Recommended Party</th>
+                                <th>Season</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>🐺 Mountain Wolf</strong></td>
+                                <td><span class="DangerTag Low">Low</span></td>
+                                <td>Upper forests, passes</td>
+                                <td>Pelt, meat</td>
+                                <td>Solo or pair</td>
+                                <td>All year</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🦕 Mountain Dinosaur</strong></td>
+                                <td><span class="DangerTag High">High</span></td>
+                                <td>Deep mountain valleys</td>
+                                <td>Hide, bones, meat</td>
+                                <td>4+ experienced hunters</td>
+                                <td>Late summer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>🦣 Wooly Mammoth</strong></td>
+                                <td><span class="DangerTag Medium">Medium</span></td>
+                                <td>Northern snowfields</td>
+                                <td>Ivory, wool, meat</td>
+                                <td>2–3 hunters with spears</td>
+                                <td>Winter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ── CREATURE DETAILS ───────────────────── -->
+            <div class="ClassContainer reveal">
+                <h2>Field Notes</h2>
+                <div class="ClassGrid">
+
+                    <div>
+                        <img src="Images\Hunting\Wolf.png" alt="Mountain Wolf">
+                        <h3>🐺 Mountain Wolf</h3>
+                        <p>
+                            The most common creature in the mountain passes, wolves travel in packs of four to
+                            twelve. A lone wolf is rarely a serious threat to an armed hunter, but packs should
+                            be approached with caution. Their pelts are warm and sell well at market.
+                        </p>
+                        <p><strong>Tip:</strong> Wolves are most active at dawn and dusk. A campfire will keep them at a distance overnight.</p>
+                    </div>
+
+                    <div>
+                        <img src="Images\Hunting\Dino.png" alt="Mountain Dinosaur">
+                        <h3>🦕 Mountain Dinosaur</h3>
+                        <p>
+                            A rare but formidable creature that inhabits the deep valleys east of the city.
+                            Hunting one is considered a rite of passage among Deshangrian warriors.
+                            Their hides are prized by the blacksmith for reinforcing armor plating.
+                        </p>
+                        <p><strong>Tip:</strong> Never approach from downwind. These creatures have an extraordinary sense of smell.</p>
+                        <p>
+                            Learn more about these creatures here
+                            <a href="https://en.wikipedia.org/wiki/Megafauna" target="_blank" rel="noopener">Wikipedia's animal article</a>.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="Images\Hunting\Wooly Mammoth.png" alt="Wooly Mammoth">
+                        <h3>🦣 Wooly Mammoth</h3>
+                        <p>
+                            The woolly mammoths of the northern snowfields are massive but generally non-aggressive
+                            unless provoked or cornered. A successful mammoth hunt can feed a family for months
+                            and yields enough wool to outfit an entire household for winter.
+                        </p>
+                        <p><strong>Tip:</strong> A mammoth hunt requires patience. Set traps the night before and approach at midday when they are slowest.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TIPS -->
+            <div class="ClassContainer reveal">
+                <h2>Hunting Rules & Permits</h2>
+                <div class="ClassGrid TwoCol">
+                    <div>
+                        <h3>What You Need</h3>
+                        <p>Before you hunt, you must have:</p>
+                        <p>
+                            A valid hunting permit (contact the help center for more information)·
+                            A registered weapon (visit the <a href="blacksmith.html">Blacksmith</a> for registration) ·
+                            Declared your intended hunting zone to the City Guard. We just need to know for your safety and the safety of those around you.
+                        </p>
+                        <h3>What Is Protected</h3>
+                        <p>
+                            The mountain eagles and stone foxes are protected species and must not be hunted.
+                            Violations are taken seriously by the Crown. While there are other protected speices, you'll learn about 
+                            in the training those two must NEVER be hunted as it is a crime punishable by death.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Hunting Parties for Hire</h3>
+                        <p>
+                            If you're new to Deshangria or the mountains, several experienced hunting parties
+                            accept new members looking for experience (they charge their own price). This is strongly recommended before attempting
+                            dinosaur or mammoth hunts alone.
+                        </p>
+                        <p>Find a party via the <a href="helpcenter.html">Help Center</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ========================= FOOTER =============================== -->
+                <!-- It will be the same across the board-->
+                <footer>
+                    <p>🏔️ <strong>Deshangria</strong> — Capital of the Kingdom of Solitude</p>
+                    <p>
+                        <a href="helpcenter.html">Help Center</a> ·
+                        <a href="">Contact Us</a> · <!-- Fake Contact Link -->
+                        <!-- we need external links so I added this random one to some D&D like stuff :) -->
+                        <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms_Wiki" target="_blank" rel="noopener">Kingdom Archives</a>
+                    </p>
+                    <p>© Year 1247 of the Third Age · All rights reserved by the Crown of Solitude</p>
+                </footer>
+
+        <script src="scroll-reveal.js"></script>
+    </body>
+</html>

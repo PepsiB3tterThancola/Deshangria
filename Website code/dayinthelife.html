@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- try to get it so that it's nice to view on any device -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The City of Deshangria</title>
+
+        <!-- import the styles the website will use, and the css stuff -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Deshangria_website_style.css">
+    </head>
+    <body>
+
+        <!-- ========================= BANNER =============================== -->
+        <header class="SiteBanner">
+            <div class="BannerInner">
+                <span class="BannerCrest">⚔️</span>
+                <div class="BannerText">
+                    <h1 class="BannerTitle">Deshangria</h1>
+                    <p class="BannerSub">Capital of the Kingdom of Solitude</p>
+                </div>
+                <span class="BannerCrest">🏔️</span>
+            </div>
+        </header>
+
+        <!-- ========================= NAVIGATION STUFF =============================== -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="Home Page.html" class="active">🏠 Home</a></li>
+                <li><a href="dayinthelife.html">☀️ Day in the Life</a></li>
+                <li><a href="history.html">📜 History</a></li>
+                <li><a href="blacksmith.html">⚒️ Blacksmith</a></li>
+                <li><a href="theater.html">🎭 Theater</a></li>
+                <li><a href="hunting.html">🐺 Hunting</a></li>
+                <li><a href="helpcenter.html">❓ Help Center</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================= THE INFO THEY'LL READ =============================== -->   
+        <main>
+
+            <!-- INTRO TO THE STUFF-->
+            <div class="ClassContainer reveal">
+                <h2>A Day in Deshangria</h2>
+                <p>
+                    Deshangria prides itself on being a melting pot community. No matter your race, religion,
+                    sexual orientation, or anything you WILL be accepted here. We have entertainment, stores, 
+                    and even mini events that happen here so look around and enjoy!
+                </p>
+
+                <div class="ClassGrid">
+                    <div>
+                        <img src="Images\City Life Images\The Market.png" alt="The morning market in Deshangria's town square">
+                        <p><em>The morning market: lots of beings get their shopping done here</em></p>
+                    </div>
+                    <div>
+                        <img src="Images\City Life Images\Street Life.png" alt="Citizens walking the main street">
+                        <p><em>This is one of the main streets in Deshangria, it's pretty crowed but you'll get used to it</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STATS -->
+            <!-- Had to make some fake stats because that's what every good city website needs lol -->
+            <div class="ClassContainer reveal">
+                <h2>How Much Better Are We? (Alot)</h2>
+                <p>
+                    Out of all cities in the Kingdom of Solitude: Brushire, Notreinier, Gronta, and Frumanuth,
+                    Deshangria consistently ranks highest in quality of life. Our leadership prides itself on making
+                    the best possible life for every inhabitant. Unlike those other lame cities of course. No offense if you currently
+                    live there of course
+                </p>
+
+                <!-- STATS: 3-column layout -->
+                <div class="ClassGrid StatGrid">
+                    <div class="StatCard">
+                        <span class="StatNumber">😊 #1</span>
+                        <h3>Happiest City</h3>
+                        <p>
+                            Deshangria has the lowest rate of depressed beings not just in the Kingdom of Solitude, but in the entire empire!
+                        </p>
+                    </div>
+                    <div class="StatCard">
+                        <span class="StatNumber">💼 #1</span>
+                        <h3>Lowest Unemployment</h3>
+                        <p>
+                            Our diverse economy half of the events you don't even need to pay for, money here is not much of a necessity more of a want for
+                            items you don't neccessarily need as they are not free.
+                        </p>
+                    </div>
+                    <div class="StatCard">
+                        <span class="StatNumber">📚 #1</span>
+                        <h3>Top Education Scores</h3>
+                        <p>
+                            Oh... you... think you're smarter then us??? Nah, we'd win.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Comparison Chart -->
+                <!-- I'd give the other kingdoms zero but I gotta make it realistic -->
+                <h3>Quality of Life Rankings in the Kingdom of Solitude</h3>
+                <div class="BarChart">
+                    <div class="BarRow">
+                        <span class="BarLabel">Deshangria</span>
+                        <div class="BarTrack"><div class="Bar" style="width:95%">95</div></div>
+                    </div>
+                    <div class="BarRow">
+                        <span class="BarLabel">Brushire</span>
+                        <div class="BarTrack"><div class="Bar" style="width:72%">72</div></div>
+                    </div>
+                    <div class="BarRow">
+                        <span class="BarLabel">Notreinier</span>
+                        <div class="BarTrack"><div class="Bar" style="width:61%">61</div></div>
+                    </div>
+                    <div class="BarRow">
+                        <span class="BarLabel">Gronta</span>
+                        <div class="BarTrack"><div class="Bar" style="width:54%">54</div></div>
+                    </div>
+                    <div class="BarRow">
+                        <span class="BarLabel">Frumanuth</span>
+                        <div class="BarTrack"><div class="Bar" style="width:48%">48</div></div>
+                    </div>
+                </div>
+                <p><em>This shows the score of happy beings in a city on a scale of per every 100 happy being.</em></p>
+
+                <!-- Another External link, just some random one -->
+                <p>Want to know how we built a city this great? Check this link out to get a little idea.
+                    <a href="https://www.worldanvil.com/w/world-anvil-user-guide" target="_blank" rel="noopener">World Anvil's city-building guides</a>
+                    talks about it.
+                </p>
+            </div>
+
+            <!-- ── WEEKLY SCHEDULE ─────────────────────── -->
+            <div class="ClassContainer reveal">
+                <h2>Weekly Rest & Events</h2>
+
+                <div class="ClassGrid">
+                    <div>
+                        <h3>Assigned Rest Days</h3>
+                        <p>
+                            In Deshangria, every worker is GUARANTEED rest. Each field of work has two assigned off-days per week.
+                            Workers whose last name begins with <strong>A–M</strong> take their rest on the earlier day of the cycle,
+                            while those with last names starting with <strong>N–Z</strong> rest the following day. This staggers the workforce
+                            so the city never sleeps all at once but everyon still gets a break. This is all happening not including if you had a 
+                            weekend off so if you did lucky you!
+                        </p>
+                    </div>
+                    <div>
+                        <h3>The Rotating Breakfast Special</h3>
+                        <p>
+                            Every week, the Great Meal Hall cooks a new special breakfast. The day it's served shifts
+                            by one day later each week, so if this week it's on a Moonday, next week it'll be on a Townsday.
+                            This keeps things fresh and gives everyone in the city a chance to enjoy it on a day that suits them.
+                        </p>
+                        <p>Ask the <a href="helpcenter.html">Help Center</a> if you have any questions or concerns about this.</p>
+                    </div>
+                    <div>
+                        <h3>Town Square Events</h3>
+                        <p>
+                            We also host cool events periodically, this way there's never a dull day 😁. We like to do a lot of events
+                            in the theater so if you are interested check out the theater page for a list of upcoming events!
+                        </p>
+                        <p>See the <a href="theater.html">Theater page</a> for the current entertainment schedule.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ========================= FOOTER =============================== -->
+        <!-- It will be the same across the board-->
+        <footer>
+            <p>🏔️ <strong>Deshangria</strong> — Capital of the Kingdom of Solitude</p>
+            <p>
+                <a href="helpcenter.html">Help Center</a> ·
+                <a href="">Contact Us</a> · <!-- Fake Contact Link -->
+                <!-- we need external links so I added this random one to some D&D like stuff :) -->
+                <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms_Wiki" target="_blank" rel="noopener">Kingdom Archives</a>
+            </p>
+            <p>© Year 1247 of the Third Age · All rights reserved by the Crown of Solitude</p>
+        </footer>
+
+        <script src="scroll-reveal.js"></script>
+    </body>
+</html>

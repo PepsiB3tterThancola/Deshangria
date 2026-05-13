@@ -1,0 +1,836 @@
+/* ============================================
+   Deshangria Website Stylesheet
+   ============================================ */
+ 
+ /*====================  CLASS STYLE EDITORS  ====================
+	The class style editors create class styles where I can house
+	differnet writing elements in a nice clean and packed grid.
+	I can also place them evenly next to each other so the website
+	look is asthetically pleasing.
+   ===============================================================
+ */
+
+/* ── CONTAINER ──────────────────────────────
+   Wraps all grid classes under a specific height
+   limit good for mini windows where there's
+   multiple grids
+   ─────────────────────────────────────────── */
+.ClassContainer {
+    height: 700px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;          
+    background-color: rgba(40, 20, 5, 0.97);        /* dark outer */
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 15px;
+    box-shadow: 0 0 12px rgba(218, 165, 32, 0.3);   /* outer gold glow */
+}
+ 
+/* ── GRID (base) ────────────────────────────
+   splits up areas on the screen by equal split
+   column areas. 
+   ─────────────────────────────────────────── */
+.ClassGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.ClassGrid > * {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 220px; /* let cells wrap on small screens */
+    min-height: fit-content;
+    gap: 0;
+    background-color: rgba(104, 56, 15, 0.85);      /* lighter inner cells */
+    border: 1px solid rgba(218, 165, 32, 0.5);      /* softer gold border */
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 15px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);  /* inner depth shadow */
+}
+ 
+/* Two columns*/
+.TwoCol > * {
+    flex: 1 1 300px;
+}
+/* ── CUSTOM SCROLLBAR ───────────────────────
+   Styled to match the gold and brown theme
+   ─────────────────────────────────────────── */
+.ClassContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ClassContainer::-webkit-scrollbar-track {
+    background: rgba(40, 20, 5, 0.97);
+    border-radius: 4px;          /* rounds the track */
+}
+
+.ClassContainer::-webkit-scrollbar-thumb {
+    background: goldenrod;
+    border-radius: 4px;
+}
+
+.ClassContainer::-webkit-scrollbar-thumb:hover {
+    background: #F5EDD8;
+}
+
+/* ── PHONE STUFF ─────────────────────────────
+   make sure it's nice to view on phones too
+   ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .ClassGrid {
+        flex-direction: column;
+    }
+ 
+    .ClassContainer {
+        height: auto; /* auto change height */
+    }
+}
+
+
+/*====================  NAVIGATION MENU CREATOR  ====================
+	This creates the navigation window nothing special just a little
+	something to go between content pages at
+   ==================================================================
+ */
+
+@media screen and (min-width: 300px) { /* mak sure the media works on all platforms */
+    /* ── Nav Bar ─────────────────────────────
+   Nav bar is the navigation menu style, it's 
+   made up of lists, unordered lists, and links
+   each declaration here is just to add the 
+   style and function of each button
+   ─────────────────────────────────────────── */
+    #navBar {
+        position: sticky;
+        top: 0;
+        margin: 0;
+        z-index: 100;                               /* stays on top of everything */
+    }
+    #navBar ul {
+        margin: 0;
+        width: 100%;
+        padding: .5em;
+        background-color: rgba(40, 20, 5, 1);   /* matches dark container */
+        border-bottom: 2px solid goldenrod;         /* gold underline */
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #navBar ul li {
+        margin: 0;
+        display: flex;
+    }
+    #navBar ul li a {
+        display: block;
+        color: goldenrod;                           /* gold text */
+        font-weight: bold;
+        border-radius: .5em;
+        padding: .5em 1em;
+        margin: 0;
+        flex: 1;
+        transition: all 0.2s;                       /* smooth hover effect */
+    }
+    #navBar ul li a:hover {
+        background: rgba(104, 56, 15, 0.85);        /* brown on hover */
+        color: white;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+    #navBar ul li a:active {
+        background: goldenrod;
+		color: rgba(40, 20, 5, 0.97);
+		box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);             /* dark text on gold */
+    }
+}
+
+/*====================  BODY STYLE  ====================
+	The body style will house many of the main styles for the website
+	background image, defualt text type, and other general stuff
+   ==================================================================
+ */
+body {
+	margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif; /* default to serif */
+    color: #F5EDD8;
+    line-height: 1.6;
+    background-color: rgba(40, 20, 5, 0.97);
+    background-image: url('images/main_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: url('Cursors/Cursor.cur'), auto;  /* found some nice cursors online */
+}
+
+
+/*====================  PARAGRAPH STYLE  ====================
+	Just my basic writing style, gonna make the words on the screen
+	look asthetically pleasing
+   ==================================================================
+ */
+p {
+    font-family: 'Cormorant Garamond', serif;  /* default to serif */
+    font-size: 1.1rem;
+    color: #F5EDD8;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    max-width: 800px;
+}
+
+
+/*====================  HEADER STYLE  ====================
+	This part needs to grab the viewer's attention so the headers
+	will look super nice and pretty for the audience
+   ==================================================================
+ */
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: goldenrod;
+    text-align: center;
+    text-shadow: /* I NEEED THE HEADER TO LOOK GOOD, came up with this nice 3d effect, im so proud :) */
+        2px 2px 0px rgba(100, 50, 0, 1),
+        4px 4px 0px rgba(80, 40, 0, 0.9),
+        0 0 20px rgba(218, 165, 32, 0.6),
+        0 0 40px rgba(218, 165, 32, 0.3);
+    background-color: rgba(40, 20, 5, 0.4);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: goldenrod;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #E8C47A;
+    font-style: italic;
+    text-align: left;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+
+/*====================  IMAGE AND VIDEO STYLE  ====================
+	Not really sure how I should size them individually so this is
+	just a general resizing thing just in case. Might change it 
+	per image but for now if it fits it fits
+   ==================================================================
+ */
+img, video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/*====================  LINK STYLE  ====================
+	I thought the normal links with the underline and just
+	changing color when you click it is kind of boring so
+	I found this think called page cards where it's kind of a link
+	but like a grid of info in the form of a card, I thought it
+	looked really cool so i'm adding them
+   ==================================================================
+ */
+
+/* ── BASIC LINKS ──────────────────────────────
+   This is just your regular smegular links
+   change color with hover and click, then stay
+   changed if already visited.
+   ─────────────────────────────────────────── */
+a {
+    color: goldenrod;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #F5EDD8;
+    text-shadow: 0 0 8px rgba(218, 165, 32, 0.6);
+}
+a:active {
+    color: rgba(218, 165, 32, 1);
+}
+a:visited {
+    color: #C97D20;                
+}
+
+a, button, .PageCard {
+    cursor: url('Cursors/Hand.cur'), pointer;  /* new cursor style XD */
+}
+
+/* ── PAGE CARDS ──────────────────────────────
+   Link Cards are a super cool interactive way
+   to give the website style. I'm adding it 
+   because it's visually appealing and can
+   make the website feel more fun.
+   ─────────────────────────────────────────── */
+.PageCard {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(104, 56, 15, 0.85), rgba(40, 20, 5, 0.97));
+    border: 1px solid rgba(218, 165, 32, 0.5);
+    border-radius: 10px;
+    margin: 15px;
+    transition: all 0.3s;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    color: inherit;
+}
+.PageCard:hover {
+    border-color: goldenrod;
+    box-shadow: 0 0 12px rgba(218, 165, 32, 0.3),
+                inset 0 0 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);   /* floats up slightly on hover */
+}
+.PageCard:visited {
+    color: inherit;                /* stops visited from turning purple */
+}
+
+/* ── CARD ICON ──────────────────────────────
+   Just styling the mini emojis
+   ─────────────────────────────────────────── */
+.CardIcon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* ── CARD LINK LABEL ──────────────────────────────
+   Styling the link label in the card that the
+   viwer will click to go somewhere else
+   ─────────────────────────────────────────── */
+.CardLink {
+    display: block;
+    margin-top: auto;              /* pushes to bottom of card */
+    padding-top: 12px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+.PageCard:hover .CardLink::after {
+    content: ' →';                 /* arrow appears on hover it's actually so cool!*/
+}
+
+/*────────  CARD GRID  ──────────────────────────────
+   The grid for the cards
+   ────────────────────────────────────────────────── */
+.CardGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+ 
+.CardGrid .PageCard {
+    flex: 1 1 260px;
+}
+ 
+
+/*====================  FOOTER STYLE  ====================
+    Just your average footer, I'm trying to make it look
+    clean :/.
+   ==================================================================
+ */
+footer {
+    background-color: rgba(40, 20, 5, 1);
+    border-top: 2px solid goldenrod;
+    padding: 24px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.8rem;          
+    color: #C97D20;             
+    max-width: 100%;            
+    margin-bottom: 6px;
+}
+
+footer a {
+    font-size: 0.8rem;
+    color: #C97D20;
+    text-decoration: none;
+    margin: 0 8px;              /* space between footer links */
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    color: goldenrod;
+    text-shadow: 0 0 8px rgba(218, 165, 32, 0.4);
+}
+
+footer a:visited {
+    color: #8B5A10;             /* even more worn out gold for visited */
+}
+
+
+/*====================  BANNER  ====================
+   Gonna make a banner that shows up on every page, I
+   feel like that would look really cool.
+   also that other comment style was kinda tiring so
+   I'm gonna tone it down a bit (~_~)
+   =================================================== */
+ /* This is the stuff for teh over arching banner */
+.SiteBanner {
+    background: linear-gradient(180deg, rgba(20, 8, 0, 1) 0%, rgba(40, 20, 5, 0.97) 100%);
+    border-bottom: 3px solid goldenrod;
+    padding: 18px 24px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(218, 165, 32, 0.2);
+}
+ /* This aligns the inside of the banner */
+.BannerInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ /* This is the decor for the cute images */
+.BannerCrest {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 0 8px rgba(218, 165, 32, 0.5));
+}
+ 
+ /* This is the stuff for the big vibrant title card */
+.BannerTitle {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: goldenrod;
+    margin: 0;
+    text-shadow:
+        2px 2px 0px rgba(100, 50, 0, 1),
+        4px 4px 0px rgba(80, 40, 0, 0.9),
+        0 0 20px rgba(218, 165, 32, 0.6);
+    letter-spacing: 0.12em;
+}
+ 
+  /* This is the tiny writting under the caption (just to show the kingdom the city is from) */
+.BannerSub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #C97D20;
+    margin: 4px 0 0 0;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    max-width: 100%;
+}
+ 
+ /*Just some resizing stuff incase the window is a different size */
+@media (max-width: 600px) {
+    .BannerTitle { font-size: 2rem; }
+    .BannerCrest { font-size: 1.5rem; }
+}
+ 
+/*====================  CITY PICTURE  ====================
+   The big welcome picture on the home page
+   ===================================================== */
+.CityPicture {
+    position: relative;
+    width: 100%;
+    max-height: 420px;
+    overflow: hidden;
+}
+ 
+.CityIMG {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7) sepia(0.3);
+}
+ 
+.CityOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(40, 20, 5, 0.97) 100%);
+    z-index: 1;
+}
+ 
+.CityCaption {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+ 
+.CityCaption p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #C97D20;
+    margin: 0;
+    max-width: 100%;
+}
+ 
+ 
+/*====================  VIDEO WRAPPER  ====================
+   video stuff
+   ======================================================= */
+.VideoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+    margin: 16px 0;
+}
+ 
+.VideoWrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+ 
+ 
+/*====================  STAT CARDS  ====================
+   This is the decoration for my stats on the best city
+   ever
+   ===================================================== */
+.StatCard {
+    text-align: center;
+}
+ 
+.StatNumber {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: goldenrod;
+    text-shadow: 0 0 12px rgba(218, 165, 32, 0.5);
+    margin-bottom: 8px;
+}
+ 
+ 
+/*====================  BAR CHART  ====================
+   Bar chart showing the cool stats
+   ================================================================ */
+.BarChart {
+    width: 100%;
+    margin: 20px 0;
+}
+ 
+.BarRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+ 
+.BarLabel {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    color: #F5EDD8;
+    min-width: 110px;
+    text-align: right;
+}
+ 
+.BarTrack {
+    flex: 1;
+    background: rgba(255,255,255,0.08);
+    border-radius: 4px;
+    height: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+}
+ 
+.Bar {
+    height: 100%;
+    background: linear-gradient(90deg, rgba(139,90,16,1) 0%, goldenrod 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(40, 20, 5, 0.97);
+    /* Animate bar fill on page load */
+    animation: barGrow 1.2s ease-out both;
+    transform-origin: left;
+}
+ 
+@keyframes barGrow {
+    from { clip-path: inset(0 100% 0 0); }
+    to   { clip-path: inset(0 0% 0 0); }
+}
+ 
+ 
+/*====================  TABLES  ====================
+   The styling for the tables
+   ================================================== */
+.TableWrapper {
+    width: 100%;
+    overflow-x: auto;   /* horizontal scroll on mobile */
+    margin: 16px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+}
+ 
+.ShowingsTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #F5EDD8;
+}
+ 
+.ShowingsTable thead tr {
+    background: rgba(218, 165, 32, 0.15);
+    border-bottom: 2px solid goldenrod;
+}
+ 
+.ShowingsTable th {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: goldenrod;
+    padding: 12px 14px;
+    text-align: left;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}
+ 
+.ShowingsTable td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.15);
+    vertical-align: middle;
+}
+ 
+.ShowingsTable tbody tr:hover {
+    background: rgba(104, 56, 15, 0.5);
+    transition: background 0.2s;
+}
+ 
+.ShowingsTable tbody tr:last-child td {
+    border-bottom: none;
+}
+ 
+/* Danger level tags in the hunting table */
+.DangerTag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.DangerTag.Low    { background: rgba(40,160,60,0.25);  color: #6dff8a; border: 1px solid rgba(40,160,60,0.5); }
+.DangerTag.Medium { background: rgba(200,150,0,0.25);  color: goldenrod; border: 1px solid rgba(200,150,0,0.5); }
+.DangerTag.High   { background: rgba(180,30,30,0.25);  color: #ff8080; border: 1px solid rgba(180,30,30,0.5); }
+ 
+ 
+/*====================  QUOTE BLOCK  ====================
+   Styled pullquote for the History page
+   ======================================================= */
+.QuoteBlock {
+    background: rgba(104, 56, 15, 0.5);
+    border-left: 4px solid goldenrod;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin: 20px 0;
+}
+ 
+.QuoteBlock p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #F5EDD8;
+    margin-bottom: 8px;
+    max-width: 100%;
+}
+ 
+.QuoteBlock span {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    color: #C97D20;
+    letter-spacing: 0.08em;
+}
+ 
+ 
+/*====================  ANIMATED RELIC IMAGES  ====================
+   This adds some flare to the images on the website, I thought 
+   it would be cool if they move a little while looking at it. 
+   Kinda brings the website to life.
+   ================================================================= */
+.AnimatedRelic {
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid rgba(218, 165, 32, 0.4);
+    margin-bottom: 12px;
+}
+ 
+.RelicImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+ 
+@keyframes pulseGlow {
+    0%, 100% {
+        filter: brightness(0.85) sepia(0.3) drop-shadow(0 0 4px rgba(218, 165, 32, 0.2));
+        transform: scale(1);
+    }
+    50% {
+        filter: brightness(1.05) sepia(0.1) drop-shadow(0 0 16px rgba(218, 165, 32, 0.6));
+        transform: scale(1.02);
+    }
+}
+ 
+ 
+/*====================  HELP CENTER FORM  ====================
+   These forms are all fake but I need to add them since it's
+   a requirement so here it is.
+   =========================================================== */
+.HelpForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+ 
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+ 
+.FormGroup label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: goldenrod;
+    letter-spacing: 0.06em;
+}
+ 
+.FormGroup input[type="text"],
+.FormGroup input[type="email"],
+.FormGroup select,
+.FormGroup textarea {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #F5EDD8;
+    background: rgba(104, 56, 15, 0.4);
+    border: 1px solid rgba(218, 165, 32, 0.4);
+    border-radius: 6px;
+    padding: 10px 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+ 
+.FormGroup input:focus,
+.FormGroup select:focus,
+.FormGroup textarea:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 8px rgba(218, 165, 32, 0.3);
+}
+ 
+.FormGroup select option {
+    background: rgba(40, 20, 5, 1);
+    color: #F5EDD8;
+}
+ 
+.RadioGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+.RadioLabel, .CheckboxLabel {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #F5EDD8;
+    cursor: url('Cursors/Hand.cur'), pointer;
+}
+ 
+.RadioLabel input, .CheckboxLabel input {
+    margin-top: 3px;
+    accent-color: goldenrod;
+    width: auto;
+}
+ 
+.SubmitBtn {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgba(40, 20, 5, 0.97);
+    background: goldenrod;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 32px;
+    cursor: url('Cursors/Hand.cur'), pointer;
+    transition: all 0.2s;
+    align-self: flex-start;
+    box-shadow: 0 0 12px rgba(218, 165, 32, 0.3);
+}
+ 
+.SubmitBtn:hover {
+    background: #F5EDD8;
+    box-shadow: 0 0 20px rgba(218, 165, 32, 0.5);
+    transform: translateY(-2px);
+}
+ 
+.SubmitBtn:active {
+    transform: translateY(0);
+}
+ 
+ 
+/*====================  SCROLL REVEAL  ====================
+   This is the feature we have not learned in class. I
+   thought it would give the website a nice touch with the
+   float in.
+   ========================================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+ 
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+/* Stagger: if multiple .reveal siblings, delay each slightly */
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal:nth-child(4) { transition-delay: 0.3s; }

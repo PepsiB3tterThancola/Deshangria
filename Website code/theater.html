@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- try to get it so that it's nice to view on any device -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The City of Deshangria</title>
+
+        <!-- import the styles the website will use, and the css stuff -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Deshangria_website_style.css">
+    </head>
+    <body>
+
+        <!-- ========================= BANNER =============================== -->
+        <header class="SiteBanner">
+            <div class="BannerInner">
+                <span class="BannerCrest">⚔️</span>
+                <div class="BannerText">
+                    <h1 class="BannerTitle">Deshangria</h1>
+                    <p class="BannerSub">Capital of the Kingdom of Solitude</p>
+                </div>
+                <span class="BannerCrest">🏔️</span>
+            </div>
+        </header>
+
+        <!-- ========================= NAVIGATION STUFF =============================== -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="Home Page.html" class="active">🏠 Home</a></li>
+                <li><a href="dayinthelife.html">☀️ Day in the Life</a></li>
+                <li><a href="history.html">📜 History</a></li>
+                <li><a href="blacksmith.html">⚒️ Blacksmith</a></li>
+                <li><a href="theater.html">🎭 Theater</a></li>
+                <li><a href="hunting.html">🐺 Hunting</a></li>
+                <li><a href="helpcenter.html">❓ Help Center</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================= MAIN CONTENT =============================== -->
+        <main>
+
+            <!-- Description -->
+            <div class="ClassContainer reveal">
+                <h2>The Deshangria Grand Theater</h2>
+                <p>
+                    Everybody needs somewhere to relax, we have just the place for you too! The theater is where most of the events in the kingdom will happen
+                    If you're bored come check out what's going on. We promise you will not be disappointed!
+                </p>
+                <div class="ClassGrid TwoCol">
+                    <div>
+                        <img src="Images\Theater\Theater.png" alt="Grand Theater exterior">
+                        <p><em>The Grand Theater! it's a great place to kick back, relax, and enjoy the show!.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── SHOWINGS TABLE ─────────────────────── -->
+            <div class="ClassContainer reveal">
+                <h2>Current Showings</h2>
+                <p>This week's schedule at the Grand Theater. All times listed in Bells past Sunrise.</p>
+
+                <!-- TABLE: this is one of the required page elements -->
+                <div class="TableWrapper">
+                    <table class="ShowingsTable">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Genre</th>
+                                <th>Day</th>
+                                <th>Time (Bells)</th>
+                                <th>Duration</th>
+                                <th>Seats Left</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>The Flight of Stratos</strong></td>
+                                <td>Epic Drama</td>
+                                <td>Moonday</td>
+                                <td>3rd Bell</td>
+                                <td>2 hrs 40 min</td>
+                                <td>🟢 Available</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Raliphina's Garden</strong></td>
+                                <td>Musical</td>
+                                <td>Fireday</td>
+                                <td>5th Bell</td>
+                                <td>1 hr 50 min</td>
+                                <td>🟡 Filling Fast</td>
+                            </tr>
+                            <tr>
+                                <td><strong>The Green Skin Siege</strong></td>
+                                <td>Historical Epic</td>
+                                <td>Stoneday</td>
+                                <td>2nd Bell</td>
+                                <td>3 hrs 10 min</td>
+                                <td>🟢 Available</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A Night in Frumanuth</strong></td>
+                                <td>Comedy</td>
+                                <td>Stoneday</td>
+                                <td>6th Bell</td>
+                                <td>1 hr 30 min</td>
+                                <td>🔴 Sold Out</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Brokunitus</strong></td>
+                                <td>Political Drama</td>
+                                <td>Windday</td>
+                                <td>4th Bell</td>
+                                <td>2 hrs 20 min</td>
+                                <td>🟢 Available</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Shadows of the Mountain</strong></td>
+                                <td>Mystery</td>
+                                <td>Restday</td>
+                                <td>3rd Bell</td>
+                                <td>2 hrs 00 min</td>
+                                <td>🟡 Filling Fast</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- UPCOMING EVENTS -->
+            <div class="ClassContainer reveal">
+                <h2>Special Events This Month</h2>
+                <div class="ClassGrid">
+                    <div>
+                        <span class="CardIcon">🎵</span>
+                        <h3>The Mountain Chorus</h3>
+                        <p>
+                            A famous Traveling ensamble that preforms throughout the kingdom. FINALLY, they are stopping here
+                            you must come and see! The next one wont be for who knows how long
+                        </p>
+                        <p><em>Next Moonday · 7th Bell · Free Admission</em></p>
+                    </div>
+                    <div>
+                        <span class="CardIcon">📖</span>
+                        <h3>Storytelling Night</h3>
+                        <p>
+                            Citizens are invited to share stories from personal tales to retold legends.
+                            The best story of the evening wins a meal at the Great Meal Hall. Everyone is welcome! Just be respectful.
+                        </p>
+                        <p><em>Every Windday · 5th Bell · Open Mic</em></p>
+                    </div>
+                    <div>
+                        <span class="CardIcon">🎭</span>
+                        <h3>Student Showcase</h3>
+                        <p>
+                            Deshangria's academy students perform original short plays and musical compositions.
+                            An annual tradition and always a crowd favorite. It's a great way for upcoming artists to show off their
+                            talent to the world!
+                        </p>
+                        <p><em>End of Month · Restday · 2nd Bell</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About the theater -->
+            <div class="ClassContainer reveal">
+                <h2>About the Grand Theater</h2>
+                <p>
+                    The Grand Theater was founded 214 years ago by a collective of artists and scholars who believed
+                    that entertainment was as essential to a city's health as food or shelter. That idea is what birthed the wonderful
+                    theater we have today.
+                </p>
+                <p>
+                    Curious about the history of theater in the real world?
+                    <a href="https://en.wikipedia.org/wiki/Theatre" target="_blank" rel="noopener">Wikipedia's Theatre article</a>
+                    is an interesting read so give it a shot.
+                </p>
+            </div>
+
+        </main>
+
+        <!-- ========================= FOOTER =============================== -->
+            <!-- It will be the same across the board-->
+            <footer>
+                <p>🏔️ <strong>Deshangria</strong> — Capital of the Kingdom of Solitude</p>
+                <p>
+                    <a href="helpcenter.html">Help Center</a> ·
+                    <a href="">Contact Us</a> · <!-- Fake Contact Link -->
+                    <!-- we need external links so I added this random one to some D&D like stuff :) -->
+                    <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms_Wiki" target="_blank" rel="noopener">Kingdom Archives</a>
+                </p>
+                <p>© Year 1247 of the Third Age · All rights reserved by the Crown of Solitude</p>
+            </footer>
+
+        <script src="scroll-reveal.js"></script>
+    </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- try to get it so that it's nice to view on any device -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>The City of Deshangria</title>
+
+        <!-- import the styles the website will use, and the css stuff -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Deshangria_website_style.css">
+    </head>
+    <body>
+
+        <!-- ========================= BANNER =============================== -->
+        <header class="SiteBanner">
+            <div class="BannerInner">
+                <span class="BannerCrest">⚔️</span>
+                <div class="BannerText">
+                    <h1 class="BannerTitle">Deshangria</h1>
+                    <p class="BannerSub">Capital of the Kingdom of Solitude</p>
+                </div>
+                <span class="BannerCrest">🏔️</span>
+            </div>
+        </header>
+
+        <!-- ========================= NAVIGATION STUFF =============================== -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="Home Page.html" class="active">🏠 Home</a></li>
+                <li><a href="dayinthelife.html">☀️ Day in the Life</a></li>
+                <li><a href="history.html">📜 History</a></li>
+                <li><a href="blacksmith.html">⚒️ Blacksmith</a></li>
+                <li><a href="theater.html">🎭 Theater</a></li>
+                <li><a href="hunting.html">🐺 Hunting</a></li>
+                <li><a href="helpcenter.html">❓ Help Center</a></li>
+            </ul>
+        </nav>
+
+        <!-- ========================= MAIN CONTENT =============================== -->
+        <main>
+
+            <!-- Description -->
+            <div class="ClassContainer reveal">
+                <h2>Deshangria Help Center</h2>
+                <p>
+                    New to the city? Have a question about city services, hunting permits, the weekly schedule,
+                    or anything else? You've come to the right place. Our help center exists so no newcomer
+                    ever feels lost in Deshangria.
+                </p>
+                <p>
+                    Browse the quick answers below, or fill out the contact form and a city representative
+                    will respond via message scroll within two business days.
+                </p>
+            </div>
+
+            <!-- Questions-->
+            <div class="ClassContainer reveal">
+                <h2>FQA (Frequently Asked Questions)</h2>
+                <div class="ClassGrid">
+                    <div>
+                        <h3>🏠 Where do I register as a new resident?</h3>
+                        <p>
+                            New residents register at the City Gate office during the first three days of their arrival.
+                            Bring proof of your trade or skill and a letter of intent if you have one. Registration is
+                            free and grants you access to the meal hall, public events, and the library.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>🐺 How do I get a hunting permit?</h3>
+                        <p>
+                            Hunting permits are issued at the City Guard post near the North Gate, you do have to pass a training first though.
+                            They are free for registered residents and valid for one season. Permits must be renewed each season.
+                            See the <a href="hunting.html">Hunting page</a> for more details on what's allowed.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>☀️ What are this week's rest days?</h3>
+                        <p>
+                            Rest days rotate by profession group and week. Check the bulletin board near the meal hall
+                            for the current week's schedule, or use the contact form below to ask a city representative
+                            directly.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>🎭 How do I reserve theater seats?</h3>
+                        <p>
+                            Most showings are open-seating arrive early for popular performances. The Student
+                            Showcase and special events may require advance registration. Check the
+                            <a href="theater.html">Theater page</a> for current availability.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>⚒️ Can I commission custom armor?</h3>
+                        <p>
+                            Yes! the <a href="blacksmith.html">Grand Forge</a> accepts commission orders.
+                            Speak directly with Master Smith Gorrund during forge hours. Lead time is typically
+                            two to four weeks depending on complexity.
+                        </p>
+                    </div>
+                    <div>
+                        <!-- It's not actually based off of this just another external link -->
+                        <h3>📜 Where can I learn more about city history?</h3>
+                        <p>
+                            The city library holds extensive archives, and this website's
+                            <a href="history.html">History page</a> covers the major events.
+                            The <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms_Wiki" target="_blank" rel="noopener">Kingdom Archives</a>
+                            are also available online for deeper research.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= CONTENT FORM =============================== -->
+            <!-- It doesn't work, it's just an example for the assignment -->
+            <div class="ClassContainer reveal">
+                <h2>Send Us a Message</h2>
+                <p>
+                    Can't find the answer above? Fill out the form below and your message will be sent to
+                    <a href="">help@deshangria.gov</a>. A city representative
+                    will respond within two business days.
+                </p>
+
+                <form
+                    class="HelpForm"
+                    action="mailto:help@deshangria.gov"
+                    method="post"
+                    enctype="text/plain">
+
+                    <!-- Name -->
+                    <div class="FormGroup">
+                        <label for="residentName">Your Name</label>
+                        <input
+                            type="text"
+                            id="residentName"
+                            name="residentName"
+                            placeholder="e.g. Stratos Ironblood"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="FormGroup">
+                        <label for="residentEmail">Your Email Address</label>
+                        <input
+                            type="email"
+                            id="residentEmail"
+                            name="residentEmail"
+                            placeholder="you@example.com"
+                            required>
+                    </div>
+
+                    <!-- Topic -->
+                    <div class="FormGroup">
+                        <label for="topic">What is your question about?</label>
+                        <select id="topic" name="topic" required>
+                            <option value="" disabled selected>— Choose a topic —</option>
+                            <option value="residency">Residency & Registration</option>
+                            <option value="hunting">Hunting Permits</option>
+                            <option value="blacksmith">Blacksmith & Forge</option>
+                            <option value="theater">Theater & Events</option>
+                            <option value="history">City History</option>
+                            <option value="schedule">Weekly Schedule & Rest Days</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Urgency -->
+                    <div class="FormGroup">
+                        <label>How urgent is your request?</label>
+                        <div class="RadioGroup">
+                            <label class="RadioLabel">
+                                <input type="radio" name="urgency" value="low"> Just curious, no rush
+                            </label>
+                            <label class="RadioLabel">
+                                <input type="radio" name="urgency" value="medium" checked> Somewhat urgent
+                            </label>
+                            <label class="RadioLabel">
+                                <input type="radio" name="urgency" value="high"> Urgent — please respond soon
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="FormGroup">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Describe your question or concern in as much detail as you'd like..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="FormGroup CheckboxGroup">
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="consent" required>
+                            I understand my message will be sent to a city representative and may be recorded
+                            in the city's correspondence archive.
+                        </label>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="FormGroup">
+                        <button type="submit" class="SubmitBtn">📜 Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+
+        <!-- ========================= FOOTER =============================== -->
+                <!-- It will be the same across the board-->
+                <footer>
+                    <p>🏔️ <strong>Deshangria</strong> — Capital of the Kingdom of Solitude</p>
+                    <p>
+                        <a href="helpcenter.html">Help Center</a> ·
+                        <a href="">Contact Us</a> · <!-- Fake Contact Link -->
+                        <!-- we need external links so I added this random one to some D&D like stuff :) -->
+                        <a href="https://forgottenrealms.fandom.com/wiki/Forgotten_Realms_Wiki" target="_blank" rel="noopener">Kingdom Archives</a>
+                    </p>
+                    <p>© Year 1247 of the Third Age · All rights reserved by the Crown of Solitude</p>
+                </footer>
+
+        <script src="scroll-reveal.js"></script>
+    </body>
+</html>
